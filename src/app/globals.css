@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-primary: #0B0B31;
+  --color-secondary: #89CFF0;
+}
+
+
+.clip-diagonal {
+  clip-path: polygon(
+    45% 0%,      /* top-left, diagonal start */
+    100% 0%,     /* top-right */
+    100% 100%,   /* bottom-right */
+    0% 100%,     /* bottom-left corner preserved */
+    0% 89%       /* end of diagonal, above corner */
+  );
+  border-radius: 0 50px 50px 50px;
+  overflow: hidden;
+}
+
+
