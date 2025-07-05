@@ -58,7 +58,7 @@ useEffect(() => {
   return (
     <section className="relative py-28 px-6 overflow-hidden">
       {/* Background grid */}
-      <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1.5px,transparent_1.5px)] [background-size:16px_16px]"></div>
+      <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#cdcdcd_1.5px,transparent_1px)] [background-size:16px_16px]"></div>
 
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-center gap-12">
