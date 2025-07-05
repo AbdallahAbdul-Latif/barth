@@ -7,7 +7,7 @@ export default function Location() {
     <section className="bg-gray-100 pt-16 pb-20 px-6">
       <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <h2 className="text-3xl font-bold text-primary mb-12 text-left">
+        <h2 className="opacity-0 animate-fade-up delay-title text-3xl font-bold text-primary mb-12 text-left">
           So finden Sie unsere Kanzlei
         </h2>
 
@@ -31,33 +31,32 @@ export default function Location() {
           {/* Info */}
           <div className="w-full lg:w-1/2 flex items-center justify-center">
             <div className="text-center">
-              <h3 className="text-2xl font-semibold mb-4">Büro Heidelberg</h3>
+              <h3 className="opacity-0 animate-fade-up delay-text1 text-2xl font-semibold mb-4">Büro Heidelberg</h3>
 
-              <p className="text-lg mb-2">
+              <p className="opacity-0 animate-fade-up delay-text2 text-lg mb-2">
                 Hans-Bunte-Str. 8<br />
                 69123 Heidelberg
               </p>
 
-              <p className="text-lg mb-2">latif_abdallah@icloud.com</p>
-              <p className="text-lg mb-6">06221 6722350</p>
+              <p className="opacity-0 animate-fade-up delay-text2 text-lg mb-2">latif_abdallah@icloud.com</p>
+              <p className="opacity-0 animate-fade-up delay-text2 text-lg mb-6">06221 6722350</p>
 
               <div className="flex justify-center lg:justify-start gap-4">
-  <a
-    href="mailto:latif_abdallah@icloud.com"
-    className="opacity-0 animate-fade-left delay-button group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors"
-  >
-    <EnvelopeIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
-    Jetzt mailen
-  </a>
-  <a
-    href="tel:+4962216722350"
-    className="opacity-0 animate-fade-right delay-button group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors"
-  >
-    <PhoneIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
-    Jetzt anrufen
-  </a>
-</div>
-
+                <a
+                    href="mailto:latif_abdallah@icloud.com"
+                    className="whitespace-nowrap opacity-0 animate-fade-left delay-button group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors"
+                >
+                    <EnvelopeIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
+                    Jetzt mailen
+                </a>
+                <a
+                    href="tel:+4962216722350"
+                    className="whitespace-nowrap opacity-0 animate-fade-right delay-button group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors"
+                >
+                    <PhoneIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
+                    Jetzt anrufen
+                </a>
+              </div>
             </div>
           </div>
         </div>
