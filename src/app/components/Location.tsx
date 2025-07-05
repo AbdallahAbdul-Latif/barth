@@ -41,22 +41,23 @@ export default function Location() {
               <p className="text-lg mb-2">latif_abdallah@icloud.com</p>
               <p className="text-lg mb-6">06221 6722350</p>
 
-              <div className="flex justify-center gap-4">
-                <a
-                  href="mailto:latif_abdallah@icloud.com"
-                  className="group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition"
-                >
-                  <EnvelopeIcon className="h-5 w-5 text-secondary group-hover:text-primary" />
-                  Jetzt mailen
-                </a>
-                <a
-                  href="tel:+4962216722350"
-                  className="group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition"
-                >
-                  <PhoneIcon className="h-5 w-5 text-secondary group-hover:text-primary" />
-                  Jetzt anrufen
-                </a>
-              </div>
+              <div className="flex justify-center lg:justify-start gap-4">
+  <a
+    href="mailto:latif_abdallah@icloud.com"
+    className="opacity-0 animate-fade-left delay-button group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors"
+  >
+    <EnvelopeIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
+    Jetzt mailen
+  </a>
+  <a
+    href="tel:+4962216722350"
+    className="opacity-0 animate-fade-right delay-button group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors"
+  >
+    <PhoneIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
+    Jetzt anrufen
+  </a>
+</div>
+
             </div>
           </div>
         </div>
@@ -64,3 +65,4 @@ export default function Location() {
     </section>
   )
 }
+
