@@ -7,11 +7,9 @@ import Team from './components/Team' // adjust path if needed
 export default function Home() {
   return (
     <div>
-      <Header />
       <Hero />
       <Location />
       <Team />
-      <Footer />
     </div>
   )
 }

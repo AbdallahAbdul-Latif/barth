@@ -18,7 +18,7 @@ export default function Header() {
   const pathname = usePathname()
 
   return (
-    <header className="bg-primary text-white sticky py-6 top-0 z-50 shadow">
+    <header className="bg-primary text-white sticky py-4 top-0 z-50 shadow">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
         {/* Logo and Branding */}
         <div className="relative w-[160px] h-auto aspect-[11/4]"> {/* Adjust aspect ratio to your logo */}
