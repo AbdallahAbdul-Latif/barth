@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Logo from './Logo' 
 
 // Importing usePathname from next/navigation to get the current path
 import { usePathname } from 'next/navigation'
@@ -21,19 +22,14 @@ export default function Header() {
     <header className="bg-primary text-white sticky py-4 top-0 z-50 shadow">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
         {/* Logo and Branding */}
-        <div className="relative w-[160px] h-auto aspect-[11/4]"> {/* Adjust aspect ratio to your logo */}
-        <Image
-            src="/logo.png"
-            alt="Logo"
-            fill
-            className="object-contain"
-            sizes="(max-width: 768px) 150px, 160px"
-        />
+        <div className="w-auto">
+          <Link href="/" onClick={() => window.location.href = "/"}>
+            <Logo />
+          </Link>
         </div>
 
-
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8 text-xl">
+        <nav className="hidden md:flex space-x-8 text-lg md:text-xl">
         {navigation.map(({ label, href }) => {
             const isActive = pathname === href
 

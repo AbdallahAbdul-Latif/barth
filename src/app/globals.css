@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 @import 'keen-slider/keen-slider.min.css';
 
@@ -5,6 +6,11 @@
 @theme {
   --color-primary: #0B0B31;
   --color-secondary: #89CFF0;
+  --color-accent: #FFA500;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
 @layer utilities {
@@ -74,6 +80,21 @@
     .delay-button {
     animation-delay: 1s;
   }
+
+    @keyframes grow-line {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  .animate-grow-line {
+    animation: grow-line 1s ease-out forwards;
+    transform-origin: left;
+  }
+
 }
 
 
