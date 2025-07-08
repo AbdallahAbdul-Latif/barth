@@ -94,7 +94,7 @@ export default function Header() {
           {/* Optional extra close button if user doesn’t click overlay */}
         </div>
 
-        <nav className="flex flex-col divide-y divide-secondary text-lg font-semibold">
+        <nav className="flex flex-col divide-y divide-gray-500 text-lg font-semibold">
           {navigation.map(({ label, href }) => {
             const isActive = pathname === href
             return (
