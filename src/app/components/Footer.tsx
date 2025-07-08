@@ -1,5 +1,8 @@
+'use client'
+
 import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
-import Image from 'next/image'
+import Link from 'next/link'
+import Logo from './Logo'
 
 export default function Footer() {
   return (
@@ -40,13 +43,9 @@ export default function Footer() {
           </h3>
           
           <div className="relative w-[160px] aspect-[11/4]">
-            <Image
-              src="/logo.png"
-              alt="Logo"
-              fill
-              className="object-contain"
-              sizes="(max-width: 768px) 150px, 160px"
-            />
+          <Link href="/" onClick={() => window.location.href = "/"}>
+            <Logo />
+          </Link>
           </div>
 
           <p className="mt-4 leading-relaxed text-sm">
