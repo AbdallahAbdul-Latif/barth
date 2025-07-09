@@ -31,7 +31,7 @@ export default function Accordion() {
   return (
     <section className="max-w-3xl mx-auto px-4 py-12">
       {/* Gradient Top Border with fade on edges */}
-      <div className="h-1 w-full mb-6 bg-gradient-to-r from-pink-500 via-purple-500 to-secondary rounded-full [mask-image:linear-gradient(to_right,transparent,black,black,transparent)]"></div>
+      <div className="h-0.5 w-full mb-6 bg-gradient-to-r from-pink-500 via-purple-500 to-secondary rounded-full [mask-image:linear-gradient(to_right,transparent,black,black,transparent)]"></div>
 
       <h2 className="text-3xl font-bold text-center mb-8">Häufig gestellte Fragen</h2>
       <div className="space-y-4">
