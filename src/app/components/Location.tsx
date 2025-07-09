@@ -42,7 +42,7 @@ export default function Location() {
           <div className="w-full lg:w-1/2 rounded-lg overflow-hidden shadow-md h-[400px]">
             <iframe
               title="Büro Heidelberg"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.9990503002615!2d8.66863431567417!3d49.40935807934737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c12554ef7b1b%3A0x1dd8726d76163a6d!2sAlte%20Glockengießerei%209%2C%2069115%20Heidelberg!5e0!3m2!1sen!2sde!4v1689752640412!5m2!1sen!2sde"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2596.0748820686113!2d8.644327977095896!3d49.40748957141189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c727e05c0571%3A0xa5d4cdb58125e9c1!2sHans-Bunte-Stra%C3%9Fe%208%2C%2069123%20Heidelberg!5e0!3m2!1sen!2sde!4v1752076566225!5m2!1sen!2sde" 
               width="100%"
               height="100%"
               allowFullScreen
@@ -77,7 +77,7 @@ export default function Location() {
                 ref={emailRef}
                 className={clsx('opacity-0 text-lg mb-2 delay-text2', emailInView && 'animate-fade-up')}
               >
-                latif_abdallah@icloud.com
+                recht@kanzleibarth.de
               </p>
 
               <p

@@ -98,10 +98,6 @@ body {
 }
 
 
-
-
-
-
 .clip-diagonal {
   clip-path: polygon(
     45% 0%,      /* top-left, diagonal start */
