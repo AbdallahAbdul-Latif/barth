@@ -19,7 +19,7 @@ const [index, setIndex] = useState(0)
 const [displayed, setDisplayed] = useState('')
 const [subIndex, setSubIndex] = useState(0)
 const [deleting, setDeleting] = useState(false)
-const [hasAnimated, setHasAnimated] = useState(false) // ⬅️ Controls start of typewriter
+const [hasAnimated, setHasAnimated] = useState(false) 
 
 // Delay start until fade-in is finished
 useEffect(() => {

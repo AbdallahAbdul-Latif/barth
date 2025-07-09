@@ -1,6 +1,7 @@
-import Hero from './components/Hero' // adjust path if needed
-import Location from './components/Location' // adjust path if needed
-import Team from './components/Team' // adjust path if needed
+import Hero from './components/Hero' 
+import Location from './components/Location' 
+import Team from './components/Team'
+import Accordion from './components/Accordion'
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Location />
       <Team />
+      <Accordion />
     </div>
   )
 }
