@@ -121,13 +121,13 @@ export default function Kontakt() {
               Mo — Fr: 10 — 13 Uhr & 14 — 16 Uhr
             </div>
 
-            {/* Buttons for large screens */}
-            <div className="hidden md:flex flex-nowrap gap-4 mt-4">
+            {/* Unified responsive buttons */}
+            <div className="flex flex-wrap justify-start gap-4 mt-4 [&>a]:flex-1 sm:[&>a]:flex-none">
               <a
                 ref={mailButtonRef}
                 href="mailto:recht@kanzleibarth.de"
                 className={clsx(
-                  'whitespace-nowrap group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0',
+                  'whitespace-nowrap group inline-flex items-center justify-center gap-2 bg-primary text-white px-4 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0 min-w-[130px]',
                   mailInView && 'animate-fade-left'
                 )}
               >
@@ -138,7 +138,7 @@ export default function Kontakt() {
                 ref={callButtonRef}
                 href="tel:+4962216722350"
                 className={clsx(
-                  'whitespace-nowrap group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0',
+                  'whitespace-nowrap group inline-flex items-center justify-center gap-2 bg-primary text-white px-4 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0 min-w-[130px]',
                   callInView && 'animate-fade-right'
                 )}
               >
@@ -146,34 +146,9 @@ export default function Kontakt() {
                 Jetzt anrufen
               </a>
             </div>
+
           </div>
         </div>
-
-        {/* Buttons for small screens */}
-        <div className="flex justify-center lg:justify-start gap-4">
-                <a
-                  ref={mailButtonRef}
-                  href="mailto:latif_abdallah@icloud.com"
-                  className={clsx(
-                    'whitespace-nowrap group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0 delay-button',
-                    mailInView && 'animate-fade-left'
-                  )}
-                >
-                  <EnvelopeIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
-                  Jetzt mailen
-                </a>
-                <a
-                  ref={callButtonRef}
-                  href="tel:+4962216722350"
-                  className={clsx(
-                    'whitespace-nowrap group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0 delay-button',
-                    callInView && 'animate-fade-right'
-                  )}
-                >
-                  <PhoneIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
-                  Jetzt anrufen
-                </a>
-          </div>
       </div>
     </section>
   )
