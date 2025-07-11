@@ -1,0 +1,20 @@
+{
+  "name": "Rechtsanwaltskanzlei Barth",
+  "short_name": "Kanzlei Barth",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0B31",
+  "theme_color": "#0B0B31",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

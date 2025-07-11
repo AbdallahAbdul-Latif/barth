@@ -7,12 +7,12 @@ import { useEffect, useRef, useState } from 'react'
 import { useInView } from 'framer-motion'
 
 const specialties = [
-  'Arbeitsrechts',
+  'Arbeitsrecht',
   'Gewerblichen Rechtsschutz',
-  'Urheberrechts',
-  'Vertragsrechts',
-  'Wettbewerbsrechts',
-  'Zivilrechts',
+  'Urheberrecht',
+  'Vertragsrecht',
+  'Wettbewerbsrecht',
+  'Zivilrecht',
 ]
 
 export default function Footer() {

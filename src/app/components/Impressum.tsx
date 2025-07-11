@@ -69,8 +69,21 @@ export default function Impressum() {
 
         <h3 className="text-xl font-semibold mt-4 mb-2">Erhebung und Speicherung personenbezogener Daten</h3>
         <p>
-          Beim Besuch der Website werden automatisch Informationen an den Server gesendet und temporär in
-          einem Logfile gespeichert (z. B. IP-Adresse, Browsertyp, Datum/Zeit).
+          Beim Besuch unserer Website werden keine personenbezogenen Daten automatisch gespeichert oder verarbeitet,
+          außer den technisch notwendigen Informationen, die durch den Hosting-Anbieter übermittelt werden (z. B. IP-Adresse,
+          Browsertyp, Datum und Uhrzeit des Zugriffs). Diese Daten dienen ausschließlich der technischen Überwachung und
+          Stabilität der Website und werden nicht zur Identifikation von Besuchern verwendet.
+        </p>
+        <p className="mt-2">
+          Es besteht kein Kontaktformular, kein Login-Bereich und keine sonstigen Funktionen zur direkten Datenerfassung
+          über die Website.
+        </p>
+
+        <h3 className="text-xl font-semibold mt-4 mb-2">Datenverarbeitung bei Bewerbungen per E-Mail</h3>
+        <p>
+          Wenn Sie uns Bewerbungsunterlagen per E-Mail zusenden, werden die darin enthaltenen personenbezogenen Daten
+          ausschließlich zur Bearbeitung Ihrer Bewerbung verarbeitet. Ihre Daten werden vertraulich behandelt und nach
+          Abschluss des Bewerbungsverfahrens entsprechend den gesetzlichen Aufbewahrungsfristen gelöscht.
         </p>
 
         <h3 className="text-xl font-semibold mt-4 mb-2">Ihre Rechte</h3>
@@ -87,6 +100,7 @@ export default function Impressum() {
           Sie haben das Recht, der Verarbeitung Ihrer personenbezogenen Daten jederzeit zu widersprechen.
         </p>
       </section>
+
     </main>
   )
 }
