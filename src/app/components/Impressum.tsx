@@ -16,7 +16,7 @@ export default function Impressum() {
       <section>
         <h2 className="text-2xl font-semibold mb-2">Kontakt</h2>
         <p>
-          Telefon: 06221 6722350<br />
+          Telefon: 06221 757400<br />
           E-Mail: recht@kanzleibarth.de
         </p>
       </section>
