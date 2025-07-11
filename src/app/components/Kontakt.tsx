@@ -122,7 +122,7 @@ export default function Kontakt() {
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-nowrap gap-4 overflow-x-auto">
               <a
                 ref={mailButtonRef}
                 href="mailto:recht@kanzleibarth.de"
