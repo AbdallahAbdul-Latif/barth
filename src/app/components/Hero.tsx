@@ -64,8 +64,8 @@ useEffect(() => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           
           {/* Text Content */}
-          <div className="text-center lg:text-left lg:w-1/2 mb-20">
-            <h1 className="opacity-0  animate-fade-up delay-title text-4xl sm:text-5xl font-extrabold text-primary mb-4 leading-tight">
+          <div className="text-center lg:text-left lg:w-1/2 mb-20 mx-10">
+            <h1 className="opacity-0  animate-fade-up delay-title text-3xl sm:text-4xl font-extrabold text-primary mb-4 leading-tight">
               Rechtsanwaltskanzlei Barth
             </h1>
 

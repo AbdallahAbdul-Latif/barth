@@ -127,7 +127,7 @@ export default function Kontakt() {
                 ref={mailButtonRef}
                 href="mailto:recht@kanzleibarth.de"
                 className={clsx(
-                  'group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0',
+                  'whitespace-nowrap group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0',
                   mailInView && 'animate-fade-left'
                 )}
               >
@@ -138,7 +138,7 @@ export default function Kontakt() {
                 ref={callButtonRef}
                 href="tel:+4962216722350"
                 className={clsx(
-                  'group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0',
+                  'whitespace-nowrap group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0',
                   callInView && 'animate-fade-right'
                 )}
               >
