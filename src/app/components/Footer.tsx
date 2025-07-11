@@ -73,7 +73,7 @@ export default function Footer() {
             <span className="text-secondary font-semibold">{displayed}|</span>
           </h3>
           <p className="leading-relaxed">
-            Rechtsanwaltin Christine Barth<br /><br />
+            Rechtsanwältin Christine Barth<br /><br />
             Mit langjähriger Erfahrung, persönlichem Engagement und fundierter juristischer Expertise
             setzen wir uns für Ihre Rechte ein. Unsere Mandanten schätzen unsere hochspezialisierte und 
             kompetente Betreuung ebenso wie das Selbstverständnis, wirtschaftliche und soziale Aspekte im Blick zu haben.
