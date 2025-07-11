@@ -70,7 +70,10 @@ export default function Footer() {
         <div ref={typeRef}>
           <h3 className="uppercase tracking-widest text-secondary font-semibold mb-4">
             Spezialisiert auf{' '}
-            <span className="text-secondary font-semibold">{displayed}|</span>
+              <span className="text-secondary font-semibold">
+                {displayed}
+                <span className="text-accent blink">|</span>
+              </span>          
           </h3>
           <p className="leading-relaxed">
             Rechtsanwältin Christine Barth<br /><br />

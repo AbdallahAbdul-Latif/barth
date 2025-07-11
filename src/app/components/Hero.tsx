@@ -71,7 +71,10 @@ useEffect(() => {
 
             <p className="opacity-0  animate-fade-up delay-text1 text-xl sm:text-2xl text-primary mb-8 max-w-xl md:mx-0 mx-10 mt-10">
               Vertrauen Sie auf Erfahrung, Klarheit und kompetente Unterstützung in allen Fragen des{' '}
-              <span className="text-primary font-semibold">{displayed}|</span>
+              <span className="text-primary font-semibold">
+                {displayed}
+                <span className="text-accent blink">|</span>
+              </span>
             </p>
 
             <p className="opacity-0  animate-fade-up delay-text2 text-xl sm:text-2xl text-primary mb-8 max-w-xl md:mx-0 mx-10 mt-20">
