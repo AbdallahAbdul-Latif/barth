@@ -15,7 +15,7 @@ export default function Kontakt() {
   const phoneTimesRef = useRef(null)
   const mailButtonRef = useRef(null)
   const callButtonRef = useRef(null)
-  const bankRef = useRef(null) // ✅ NEW
+  const bankRef = useRef(null)
 
   const titleInView = useInView(titleRef, { once: true, amount: 0.1 })
   const addressInView = useInView(addressRef, { once: true, amount: 0.1 })
@@ -26,7 +26,7 @@ export default function Kontakt() {
   const phoneTimesInView = useInView(phoneTimesRef, { once: true, amount: 0.1 })
   const mailInView = useInView(mailButtonRef, { once: true, amount: 0.1 })
   const callInView = useInView(callButtonRef, { once: true, amount: 0.1 })
-  const bankInView = useInView(bankRef, { once: true, amount: 0.1 }) // ✅ NEW
+  const bankInView = useInView(bankRef, { once: true, amount: 0.1 })
 
   return (
     <section className="bg-gray-100 py-16 px-6">
@@ -37,7 +37,7 @@ export default function Kontakt() {
         <div className="w-full mb-12 rounded-lg overflow-hidden shadow-md h-[400px]">
           <iframe
             title="Standort Heidelberg"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2596.0748820686113!2d8.644327977095896!3d49.40748957141189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c727e05c0571%3A0xa5d4cdb58125e9c1!2sHans-Bunte-Stra%C3%9Fe%208%2C%2069123%20Heidelberg!5e0!3m2!1sen!2sde!4v1752076566225!5m2!1sen!2sde" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2596.0748820686113!2d8.644327977095896!3d49.40748957141189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4797c727e05c0571%3A0xa5d4cdb58125e9c1!2sHans-Bunte-Stra%C3%9Fe%208%2C%2069123%20Heidelberg!5e0!3m2!1sen!2sde!4v1752076566225!5m2!1sen!2sde"
             width="100%"
             height="100%"
             allowFullScreen
@@ -82,7 +82,7 @@ export default function Kontakt() {
               06221 6722350
             </p>
 
-            {/* ✅ Bank Info */}
+            {/* Bank Info */}
             <div
               ref={bankRef}
               className={clsx('opacity-0 mt-8', bankInView && 'animate-fade-up')}
@@ -121,8 +121,8 @@ export default function Kontakt() {
               Mo — Fr: 10 — 13 Uhr & 14 — 16 Uhr
             </div>
 
-            {/* Buttons */}
-            <div className="flex flex-nowrap gap-4 overflow-x-auto">
+            {/* Buttons for large screens */}
+            <div className="hidden md:flex flex-nowrap gap-4 mt-4">
               <a
                 ref={mailButtonRef}
                 href="mailto:recht@kanzleibarth.de"
@@ -147,6 +147,24 @@ export default function Kontakt() {
               </a>
             </div>
           </div>
+        </div>
+
+        {/* Buttons for small screens */}
+        <div className="flex flex-col md:hidden gap-4 mt-10 items-center">
+          <a
+            href="mailto:recht@kanzleibarth.de"
+            className="group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors"
+          >
+            <EnvelopeIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
+            Jetzt mailen
+          </a>
+          <a
+            href="tel:+4962216722350"
+            className="group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors"
+          >
+            <PhoneIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
+            Jetzt anrufen
+          </a>
         </div>
       </div>
     </section>
