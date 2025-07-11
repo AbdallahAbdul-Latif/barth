@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import Image from 'next/image'
 
 const images = ['/empfang.jpg', '/table.jpg', '/books.jpg']
 
@@ -16,39 +17,52 @@ export default function Welcome() {
   const nextImage = () => {
     if (isAnimating) return
     setIsAnimating(true)
-    setShowNew(false) // trigger collapse
+    setShowNew(false)
 
     setTimeout(() => {
       setIndex((prev) => (prev + 1) % images.length)
-      setShowNew(true) // trigger expand
+      setShowNew(true)
       setTimeout(() => setIsAnimating(false), expandDuration * 1000)
     }, collapseDuration * 1000)
   }
 
   return (
-    
     <div className="relative w-[500px] h-[500px] mx-auto bg-transparent clip-diagonal overflow-hidden">
       <AnimatePresence mode="wait">
         {!showNew ? (
-          <motion.img
+          <motion.div
             key={`old-${index}`}
-            src={images[index]}
-            alt="Collapsing"
             initial={{ scaleY: 1 }}
             animate={{ scaleY: 0 }}
             transition={{ duration: collapseDuration, ease: 'easeInOut' }}
-            className="w-full h-full object-cover absolute top-0 left-0 origin-bottom"
-          />
+            className="w-full h-full absolute top-0 left-0 origin-bottom"
+          >
+            <Image
+              src={images[index]}
+              alt="Kanzlei"
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, 500px"
+              priority={index === 0}
+            />
+          </motion.div>
         ) : (
-          <motion.img
+          <motion.div
             key={`new-${index}`}
-            src={images[index]}
-            alt="Expanding"
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1 }}
             transition={{ duration: expandDuration, ease: 'easeInOut' }}
-            className="w-full h-full object-cover absolute top-0 left-0 origin-bottom"
-          />
+            className="w-full h-full absolute top-0 left-0 origin-bottom"
+          >
+            <Image
+              src={images[index]}
+              alt="Kanzlei"
+              fill
+              style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, 500px"
+              priority={index === 0}
+            />
+          </motion.div>
         )}
       </AnimatePresence>
 
