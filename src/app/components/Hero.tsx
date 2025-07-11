@@ -80,14 +80,14 @@ useEffect(() => {
 
             <div className="flex justify-center lg:justify-start gap-4">
               <a
-                href="mailto:latif_abdallah@icloud.com"
+                href="mailto:recht@kanzleibarth.de"
                 className="opacity-0  animate-fade-left delay-button group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition"
               >
                 <EnvelopeIcon className="h-5 w-5 text-secondary transition-colors group-hover:text-primary" />
                 Jetzt mailen
               </a>
               <a
-                href="tel:+4917681241143"
+                href="tel:+496221757400"
                 className="opacity-0  animate-fade-right delay-button group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition"
               >
                 <PhoneIcon className="h-5 w-5 text-secondary transition-colors group-hover:text-primary" />

@@ -84,13 +84,13 @@ export default function Location() {
                 ref={phoneRef}
                 className={clsx('opacity-0 text-lg mb-6 delay-text2', phoneInView && 'animate-fade-up')}
               >
-                06221 6722350
+                06221 757400
               </p>
 
               <div className="flex justify-center lg:justify-start gap-4">
                 <a
                   ref={mailButtonRef}
-                  href="mailto:latif_abdallah@icloud.com"
+                  href="mailto:recht@kanzleibarth.de"
                   className={clsx(
                     'whitespace-nowrap group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0 delay-button',
                     mailInView && 'animate-fade-left'
@@ -101,7 +101,7 @@ export default function Location() {
                 </a>
                 <a
                   ref={callButtonRef}
-                  href="tel:+4962216722350"
+                  href="tel:+496221757400"
                   className={clsx(
                     'whitespace-nowrap group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0 delay-button',
                     callInView && 'animate-fade-right'

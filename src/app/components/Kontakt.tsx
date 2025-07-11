@@ -79,7 +79,7 @@ export default function Kontakt() {
               ref={phoneRef}
               className={clsx('opacity-0 text-lg mb-4', phoneInView && 'animate-fade-up')}
             >
-              06221 6722350
+              06221 757400
             </p>
 
             {/* Bank Info */}
@@ -136,7 +136,7 @@ export default function Kontakt() {
               </a>
               <a
                 ref={callButtonRef}
-                href="tel:+4962216722350"
+                href="tel:+496221757400"
                 className={clsx(
                   'whitespace-nowrap group inline-flex items-center justify-center gap-2 bg-primary text-white px-4 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0 min-w-[130px]',
                   callInView && 'animate-fade-right'
