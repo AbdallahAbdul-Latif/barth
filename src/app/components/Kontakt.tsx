@@ -150,22 +150,30 @@ export default function Kontakt() {
         </div>
 
         {/* Buttons for small screens */}
-        <div className="flex flex-col md:hidden gap-4 mt-10 items-center">
-          <a
-            href="mailto:recht@kanzleibarth.de"
-            className="group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors"
-          >
-            <EnvelopeIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
-            Jetzt mailen
-          </a>
-          <a
-            href="tel:+4962216722350"
-            className="group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors"
-          >
-            <PhoneIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
-            Jetzt anrufen
-          </a>
-        </div>
+        <div className="flex justify-center lg:justify-start gap-4">
+                <a
+                  ref={mailButtonRef}
+                  href="mailto:latif_abdallah@icloud.com"
+                  className={clsx(
+                    'whitespace-nowrap group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0 delay-button',
+                    mailInView && 'animate-fade-left'
+                  )}
+                >
+                  <EnvelopeIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
+                  Jetzt mailen
+                </a>
+                <a
+                  ref={callButtonRef}
+                  href="tel:+4962216722350"
+                  className={clsx(
+                    'whitespace-nowrap group inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium hover:bg-secondary hover:text-primary transition-colors opacity-0 delay-button',
+                    callInView && 'animate-fade-right'
+                  )}
+                >
+                  <PhoneIcon className="h-5 w-5 text-secondary group-hover:text-primary transition-colors" />
+                  Jetzt anrufen
+                </a>
+          </div>
       </div>
     </section>
   )
