@@ -98,12 +98,12 @@ export default function Footer() {
           </p>
 
           <p className="mt-4 text-sm">
-            Telefon 06221 6722350<br />
+            Telefon 06221 757400<br />
             recht@kanzleibarth.de
           </p>
 
           <div className="flex space-x-3 mt-6">
-            <a href="tel:+4962216722350" className="bg-secondary text-primary p-2 rounded">
+            <a href="tel:+496221757400" className="bg-secondary text-primary p-2 rounded">
               <PhoneIcon className="w-5 h-5" />
             </a>
             <a href="mailto:recht@kanzleibarth.de" className="bg-secondary text-primary p-2 rounded">
