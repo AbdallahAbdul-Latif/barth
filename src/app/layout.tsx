@@ -4,9 +4,11 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 
 export const metadata = {
-  title: 'Kanzlei Barth',
-  description: 'Rechtsanwaltskanzlei',
+  title: 'Rechtsanwältin Christine Barth – Kanzlei Barth in Heidelberg',
+  description:
+    'Rechtsanwältin Christine Barth in Heidelberg – spezialisiert auf Arbeitsrecht, Urheberrecht, Vertragsrecht und persönlichen Rechtsbeistand.',
 }
+
 
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
